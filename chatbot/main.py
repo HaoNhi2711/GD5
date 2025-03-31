@@ -57,3 +57,7 @@ def chatbot_response(request: ChatRequest):
         bot_reply = f"🚨 Đã xảy ra lỗi: {str(e)}"
 
     return {"response": bot_reply}
+# Chạy server bằng lệnh:
+# uvicorn chatbot.main:app --reload --host 127.0.0.1 --port 8000
+# Mở web 
+# http://localhost/CHATBOT_YHOC/index.php
